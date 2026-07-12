@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  sdr-scanner:
+    build: .
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    privileged: true
